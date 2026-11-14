@@ -1,0 +1,16 @@
+:root{--ink:#12343b;--sea:#1f7a8c;--sand:#f6efe3;--coral:#e4572e}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:var(--ink);background:var(--sand);line-height:1.6}
+nav{display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:var(--ink);padding:12px 20px}
+nav a{color:#fff;text-decoration:none;font-family:Arial,sans-serif}nav a:hover{color:var(--coral)}
+nav .search{margin-left:auto;display:flex;gap:6px}
+nav input{padding:8px;border:0;border-radius:4px;min-width:180px}
+button{padding:8px 14px;border:0;border-radius:4px;background:var(--coral);color:#fff;cursor:pointer}
+button.clear{background:var(--sea)}
+.hero{min-height:55vh;padding:60px 20px;background:linear-gradient(rgba(18,52,59,.65),rgba(18,52,59,.65)),url(images/borabora.jpg) center/cover;color:#fff}
+.hero h1{font-size:2.6rem;max-width:14ch}.hero p{max-width:55ch}
+main{max-width:900px;margin:auto;padding:24px 20px}
+#results{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:#fff;border-radius:8px;overflow:hidden}.card img{width:100%;height:170px;object-fit:cover}
+.card h3,.card p{margin:10px 14px}.time{font-weight:bold;color:var(--sea)}
+form{display:grid;gap:10px;max-width:480px}input,textarea{padding:10px;font:inherit;border:1px solid #bbb;border-radius:4px}
+:focus-visible{outline:3px solid var(--coral)}
